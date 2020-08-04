@@ -3,11 +3,42 @@
 @import "_variables";
 @import "modules/hello.scss";
 
+*,
+*::before,
+*:after {
+  box-sizing: inherit;
+}
+
 body {
-  background: $wtf;
-  color: #fff;
+  
+  background: rgba(74, 78, 105, 0.774);
   display: flex;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
+  font-family: 'Cormorant', serif;
+  color: #312F2F;
+
+}
+.editor {
+  display: flex;
+  flex-direction: column;
+}
+// .editor__image {
+//   margin: 70px 141px 1095px 1107px;
+//   align-self: flex-start;
+//   width: 192px;
+//   height: 138px;
+//   display: block; 
+//   flex-shrink: 0;
+
+// }
+
+.form {
+  display: block;
+}
+
+.label {
+  display: flex;
+  flex-direction: column;
 }

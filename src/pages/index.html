@@ -7,21 +7,33 @@
 </head>
 <body>
   <main>
-    <article>
+    <article class="editor">
   <header>
     <h1>
       Summer Thoughts Editor 
     </h1>
   </header>
- <div>
-    <img src="/src/assets/img/flower.svg" alt="flower"/>
-  </div>
-  <p>
-    <label class="label" for="textarea">Jakieś przemyślenia na dziś?</label>
+    <!-- <img class="editor__image" src="/src/assets/img/flower.svg" alt="flower"/> -->
+  <form class="form">
+  <p class="form__text">
+    <label class="label" for="textarea">Please put here your first assosiation with the word SUMMER</label>
     <textarea 
     id="textarea"
-    name="textarea">A może nauczyłeś się dziś czegoś nowego?</textarea>
+    name="textarea">That can be anything</textarea>
   </p>
+</form>
+<div class="button">
+  <p class="button__preview">
+  <button class="button__preview--action">
+    Show previous answer
+  </button>
+  </p>
+  <p class="button__save">
+    <button class="button__preview--save">
+      Save my word
+    </button>
+    </p>
+  </div>
   </article>
     
 </main>
