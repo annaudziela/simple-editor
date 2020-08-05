@@ -4,121 +4,127 @@
 @import "modules/hello.scss";
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet');
 
-*,
-*::before,
-*:after {
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
   box-sizing: inherit;
 }
 
 body {
-  
   background: rgba(247, 210, 197, 0.836);
   display: flex;
+  flex-shrink: 0;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  
-  color: #312F2F;
-  
-
+  padding: 16px;
+  z-index: 0;
+  color: #312f2f;
 }
 
 .button {
   display: flex;
-  flex-direction: row;
-  align-self: flex-end;
-  font-family: 'Open Sans', sans-serif;
-  &__preview--action {
-    margin-right: 6px;
-    width: 180px;
-height: 40px;
-background: #FAFAFC;
-border: 1px solid #505565;
-box-sizing: border-box;
-border-radius: 4px;
-font-family: 'Open Sans', sans-serif;
-font-style: normal;
-font-weight: 300;
-font-size: 12px;
-line-height: 12px;
-letter-spacing: 0.11em;
-  }
-  &__preview--save {
-  width: 161px;
-height: 40px;
-background: #3E465F;
-border: 1px solid #505565;
-box-sizing: border-box;
-border-radius: 4px;
-color: whitesmoke;
-font-family: 'Open Sans', sans-serif;
-font-style: normal;
-font-weight: 300;
-font-size: 12px;
-line-height: 12px;
-letter-spacing: 0.11em;
-}
-&__preview--save:hover {
-  background-color: rgba(62, 70, 95, 0.849);
-  color: rgb(31, 36, 53);
-}
-&__preview--action:hover {
-  background-color: rgba(250, 250, 252, 0.781);
-  color: rgba(62, 70, 95, 0.849);
-}
-}
+  justify-content: flex-end;
+  font-family: "Open Sans", sans-serif;
+  margin-top: 16px;
+  &__preview {
+    margin-right: 10px;
+    height: 36px;
+    background: #fafafc;
+    border: 1px solid #505565;
+    color: #505565; 
+    box-sizing: border-box;
+    border-radius: 4px;
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 12px;
+    letter-spacing: 0.11em;
 
+  }
+  &__save {
+  
+    height: 36px;
+    background: #3e465f;
+    border: 1px solid #505565;
+    box-sizing: border-box;
+    border-radius: 4px;
+    color: whitesmoke;
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 12px;
+    letter-spacing: 0.11em;
+  }
+  &__save:hover {
+    background-color: rgba(62, 70, 95, 0.849);
+    color: rgb(31, 36, 53);
+  }
+  &__preview:hover {
+    background-color: rgba(250, 250, 252, 0.781);
+    color: rgba(62, 70, 95, 0.849);
+  }
+}
 
 .editor {
-  display: flex;
-  flex-direction: column;
+  width: 100%;
+  max-width: 736px;
+  &__article {
+    display: flex;
+    flex-direction: column;
+  }
+  &__image {
+    position: absolute;
+    width: 760px;
+    height: 582px;
+    left: 0px;
+    top: 460px;
+    bottom: 0px;
+    z-index: -1;
+  }
+  &__h {
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 29px;
+    line-height: 48px;
+    letter-spacing: 0.11em;
+    color: #2f2e41;
+  }
+  &__subtitle {
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: 0.2em;
+    color: #2f2e41;
+  }
 }
 
-  
-.editor__image {
-
-  position: absolute;
-  width: 760px;
-  height: 582px;
-  left: 0px;
-  top: 460px;
-  bottom: 0px;
-
-}
-
-.editor__h {
-font-family: 'Open Sans', sans-serif;
-font-style: normal;
-font-weight: 300;
-font-size: 29px;
-line-height: 48px;
-letter-spacing: 0.11em;
-color: #2F2E41;
-}
 
 .form {
-  display: block;
-
+  
+  &__textarea {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 190px;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 12px;
+    letter-spacing: 0.11em;
+    color: #2f2e41;
+  }
 }
-
-
-
-.label {
-  display: flex;
-  flex-direction: column;
-  width: 728px;
-  height: 190px;
-  padding: 16px;
-  border: none;
-  border-radius: 8px;
-  font-family: 'Open Sans', sans-serif;
-font-style: normal;
-font-weight: 300;
-font-size: 16px;
-line-height: 12px;
-letter-spacing: 0.11em;
-color: #2F2E41;
-}
-
 
 
