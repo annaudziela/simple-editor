@@ -1,18 +1,17 @@
-![cover](https://cotenfrontend.pl/img/cover.png)
+![cover](/src/assets/img/flower.svg)
 
-# WTF Webpack Starter Kit 
+# Simple text editor
 
-Simple toolkit for your static websites development.
+This is simple app where you can put your summer thoughts.
 
 ## How to use it?
 
-Click on `Use this template` button to generate a new repository based on this starter kit. After that clone it to your computer, go to the project directory in console and type `npm install`.
+Click on `Save my idea` button to save your world in local storage. 
+Click on `Show previous answer` to see what is the previous word saved in local storage. 
+Emoji will suggest you if there is something there currently.
+💁🏼‍♀️ means that local storage is not empty
+🤷🏼‍♀️ means local storage is currently empty and you need to put here your answer.
 
-## Available scripts
+*** Have fun!
 
-`npm run start` - runs development mode
-
-`npm run build` - runs build process for production
-
-`npm run publish` - runs build process and publish the page using `gh-pages` branch
 

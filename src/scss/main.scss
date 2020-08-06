@@ -78,7 +78,7 @@ body {
     flex-direction: column;
   }
   &__image {
-    position: absolute;
+    position: fixed;
     width: 760px;
     height: 582px;
     left: 0px;
