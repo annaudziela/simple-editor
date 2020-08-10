@@ -1,19 +1,60 @@
 @import "~normalize.css";
+// @import "modules/circles.scss";
 
 @import "_variables";
 @import "modules/hello.scss";
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet');
 
+@keyframes buttonAnimation {
+  0% {
+    transform: translate(1px, 1px);
+  }
+  50% {
+    transform: translate(1.5px, 1.5px);
+  }
+  100% {
+    transform: translate(2px, 2px);
+  }
+}
+
+@keyframes fun {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.01);
+  }
+  50% {
+    transform: scale(1.02);
+  }
+  75% {
+    transform: scale(1.01);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes sun {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 html {
   box-sizing: border-box;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: inherit;
 }
 
 body {
-  background: rgba(247, 210, 197, 0.836);
+  background-color: rgba(247, 210, 197, 0.836);
   display: flex;
   flex-shrink: 0;
   align-items: center;
@@ -22,6 +63,10 @@ body {
   padding: 16px;
   z-index: 0;
   color: #312f2f;
+  transition: color 1s linear;
+  &:hover {
+    color: rgba(25, 233, 18, 0.863);
+  }
 }
 
 .button {
@@ -29,12 +74,13 @@ body {
   justify-content: flex-end;
   font-family: "Open Sans", sans-serif;
   margin-top: 16px;
+
   &__preview {
     margin-right: 10px;
     height: 36px;
     background: #fafafc;
     border: 1px solid #505565;
-    color: #505565; 
+    color: #505565;
     box-sizing: border-box;
     border-radius: 4px;
     font-family: "Open Sans", sans-serif;
@@ -43,10 +89,8 @@ body {
     font-size: 12px;
     line-height: 12px;
     letter-spacing: 0.11em;
-
   }
   &__save {
-  
     height: 36px;
     background: #3e465f;
     border: 1px solid #505565;
@@ -61,8 +105,8 @@ body {
     letter-spacing: 0.11em;
   }
   &__save:hover {
-    background-color: rgba(62, 70, 95, 0.849);
-    color: rgb(31, 36, 53);
+    background: rgba(41, 52, 87, 0.774);
+    color: whitesmoke;
   }
   &__preview:hover {
     background-color: rgba(250, 250, 252, 0.781);
@@ -78,13 +122,15 @@ body {
     flex-direction: column;
   }
   &__image {
+    display: inline-block;
     position: fixed;
     width: 760px;
     height: 582px;
     left: 0px;
     top: 460px;
     bottom: 0px;
-    z-index: -1;
+    // z-index: -1;
+    // animation: fun 6s linear infinite;
   }
   &__h {
     font-family: "Open Sans", sans-serif;
@@ -106,9 +152,22 @@ body {
   }
 }
 
+.emojianimated {
+  animation: sun 5s linear 3 reverse;
+  display: inline-block;
+  position: absolute;
+  fill: rgba(236, 236, 9, 0.795);
+}
+
+.element {
+  opacity: 1;
+  transition: opacity 2s ease-in-out;
+  }
+  .element:hover {
+      opacity: 0.5;
+  }
 
 .form {
-  
   &__textarea {
     display: flex;
     flex-direction: column;
@@ -126,5 +185,4 @@ body {
     color: #2f2e41;
   }
 }
-
 
