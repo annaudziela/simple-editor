@@ -1,13 +1,19 @@
 <svg id="effa29f7-1903-425a-b28d-f3a5dd58d661" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="930.25869" height="652" viewBox="0 0 930.25869 652">
 
-<style type="text/scc">
+<style type="text/css">
+
+
+@keyframes fun {
+ from {
+     opacity: 0.5;
+ }
+ to {
+opacity: 2;
+ }
+}
 
 .element {
-opacity: 4;
-transition: opacity 2s ease-in-out;
-}
-.element:hover {
-    opacity: 1;
+    animation: fun 2s ease-in infinite alternate; 
 }
 </style>
 
