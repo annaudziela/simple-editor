@@ -42,7 +42,7 @@ html {
 body {
   background-color: rgba(247, 210, 197, 0.836);
   display: flex;
-  flex-shrink: 0;
+  flex-shrink: auto;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
@@ -99,20 +99,25 @@ body {
 }
 
 .editor {
+
   width: 100%;
   max-width: 736px;
+  
+  
   &__article {
+    flex-shrink: auto;
     display: flex;
     flex-direction: column;
+    
   }
   &__image {
     display: inline-block;
     position: fixed;
     width: 760px;
     height: 582px;
-    left: 0px;
+    left: 0;
     top: 460px;
-    bottom: 0px;
+    bottom: 0;
    
   }
   &__h {

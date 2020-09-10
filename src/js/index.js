@@ -27,4 +27,3 @@ load.addEventListener('click', (e) => {
    })
 
    
-// console.log('HELLO 🚀')
