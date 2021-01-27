@@ -110,6 +110,11 @@ body {
     flex-direction: column;
     
   }
+  &__emoji {
+    animation: sun 5s linear 3 reverse;
+    display: inline-block;
+    position: absolute;
+  }
   &__image {
     display: inline-block;
     position: fixed;
@@ -120,7 +125,7 @@ body {
     bottom: 0;
    
   }
-  &__h {
+  &__header {
     font-family: "Open Sans", sans-serif;
     font-style: normal;
     font-weight: 300;
@@ -140,12 +145,6 @@ body {
   }
 }
 
-.emojianimated {
-  animation: sun 5s linear 3 reverse;
-  display: inline-block;
-  position: absolute;
-  
-}
 
 .form {
   &__textarea {
