@@ -1,8 +1,6 @@
 @import "~normalize.css";
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet');
 
-
-
 @keyframes fun {
   0% {
     transform: scale(1);
@@ -45,19 +43,17 @@ body {
   flex-shrink: auto;
   align-items: center;
   justify-content: center;
+  font-family: "Open Sans", Helvetica, sans-serif;
   min-height: 100vh;
   padding: 16px;
   color: #312f2f;
   transition: color 1s linear;
-  
 }
 
 .button {
-  
   &__wrapper {
     display: flex;
     justify-content: flex-end;
-    font-family: "Open Sans", sans-serif;
     margin-top: 16px;
     z-index: 100;
   }
@@ -70,14 +66,16 @@ body {
     color: #505565;
     box-sizing: border-box;
     border-radius: 4px;
-    font-family: "Open Sans", sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 12px;
     line-height: 12px;
     letter-spacing: 0.11em;
     cursor: pointer;
-    
+    &:hover {
+      background-color: rgba(250, 250, 252, 0.781);
+      color: rgba(62, 70, 95, 0.849);
+    }
   }
   &__save {
     height: 36px;
@@ -86,35 +84,27 @@ body {
     box-sizing: border-box;
     border-radius: 4px;
     color: whitesmoke;
-    font-family: "Open Sans", sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 12px;
     line-height: 12px;
     letter-spacing: 0.11em;
     cursor: pointer;
-  }
-  &__save:hover {
-    background: rgba(41, 52, 87, 0.774);
-    color: whitesmoke;
-  }
-  &__load:hover {
-    background-color:rgba(250, 250, 252, 0.781);;
-    color: rgba(62, 70, 95, 0.849);
+    &:hover {
+      background: rgba(41, 52, 87, 0.774);
+      color: whitesmoke;
+    }
   }
 }
 
 .editor {
-
   width: 100%;
   max-width: 736px;
-  
-  
+
   &__article {
     flex-shrink: auto;
     display: flex;
     flex-direction: column;
-    
   }
   &__emoji {
     animation: sun 5s linear 3 reverse;
@@ -133,10 +123,8 @@ body {
     @media (max-width: 600px) {
       display: none;
     }
-   
   }
   &__header {
-    font-family: "Open Sans", sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 29px;
@@ -145,7 +133,6 @@ body {
     color: #1d0809;
   }
   &__subtitle {
-    font-family: "Open Sans", sans-serif;
     font-style: normal;
     font-weight: 100;
     font-size: 15px;
@@ -154,7 +141,6 @@ body {
     color: #2f2e41;
   }
 }
-
 
 .form {
   &__textarea {
@@ -165,7 +151,6 @@ body {
     padding: 12px;
     border: none;
     border-radius: 8px;
-    font-family: "Open Sans", sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 16px;
@@ -174,4 +159,3 @@ body {
     color: #2f2e41;
   }
 }
-
