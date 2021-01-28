@@ -1,9 +1,9 @@
 import '../scss/main.scss';
 
 
-const textarea = document.querySelector('.textarea--js');
-const save = document.querySelector('.save--js');
-const load = document.querySelector('.load--js');
+const textarea = document.querySelector('.form__textarea--js');
+const save = document.querySelector('.button__save--js');
+const load = document.querySelector('.button__load--js');
 const currentValue = localStorage.getItem('entry');
 
 if (currentValue) {
@@ -25,5 +25,7 @@ load.addEventListener('click', (e) => {
     e.preventDefault();
     textarea.value = localStorage.getItem('entry');
    })
+
+
 
    
