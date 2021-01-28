@@ -53,11 +53,14 @@ body {
 }
 
 .button {
-  display: flex;
-  justify-content: flex-end;
-  font-family: "Open Sans", sans-serif;
-  margin-top: 16px;
-  z-index: 100;
+  
+  &__wrapper {
+    display: flex;
+    justify-content: flex-end;
+    font-family: "Open Sans", sans-serif;
+    margin-top: 16px;
+    z-index: 100;
+  }
 
   &__load {
     margin-right: 10px;
